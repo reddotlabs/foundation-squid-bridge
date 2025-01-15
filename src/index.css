@@ -52,3 +52,7 @@ h6 {
 .tw-leading-body-small {
   line-height: 16px !important;
 }
+
+.tw-leading-caption {
+  line-height: 16px !important;
+}

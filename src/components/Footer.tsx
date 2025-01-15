@@ -69,7 +69,7 @@ export const Footer: React.FC = () => {
             >
               Terms of Service
             </a>{" "}
-            <span className="hidden lg:(inline)">/</span>{" "}
+            <span className="hidden lg:inline">/</span>{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
@@ -77,7 +77,7 @@ export const Footer: React.FC = () => {
             >
               Privacy Policy
             </a>{" "}
-            <span className="hidden lg:(inline)">/</span>{" "}
+            <span className="hidden lg:inline">/</span>{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"
