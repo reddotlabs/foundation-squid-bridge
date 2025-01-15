@@ -1,10 +1,10 @@
 import c from "classnames";
 import React from "react";
-import bgFooter from "../../public/bg-footer.png";
-import icDiscord from "../../public/ic-discord.svg";
-import icMedium from "../../public/ic-medium.svg";
-import icTele from "../../public/ic-tele.svg";
-import icTwitter from "../../public/ic-twitter.svg";
+import bgFooter from "../assets/images/bg-footer.png";
+import icDiscord from "../assets/icons/ic-discord.svg";
+import icMedium from "../assets/icons/ic-medium.svg";
+import icTele from "../assets/icons/ic-tele.svg";
+import icTwitter from "../assets/icons/ic-medium.svg";
 
 export const ExternalLinks = {
   twitter: "https://twitter.com/Foundation_nw",
@@ -21,7 +21,7 @@ export const ExternalLinks = {
 
 export const Footer: React.FC = () => {
   return (
-    <div className="footer">
+    <div className="font-['Lexend'] mt-auto">
       <div className="max-w-100% xl:max-w-1200px px-15px py-30px mx-auto w-100% pb-0">
         <div className="flex flex-col items-center lg:grid lg:grid-cols-3 lg:pt-30px b-t-1px b-t-solid b-t-#323543 b-t-op-30 text-14px justify-between">
           <div className="c-#8F8F8FCC order-3 lg:order-1">
@@ -91,7 +91,7 @@ export const Footer: React.FC = () => {
       <div className="w-100% overflow-hidden flex justify-center">
         <img
           src={bgFooter}
-          className="h-171px w-auto max-w-none md:(w-100% h-auto) block"
+          className="h-171px w-auto max-w-none md:w-100% md:h-auto block"
         />
       </div>
     </div>
