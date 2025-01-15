@@ -1,6 +1,6 @@
 import { SquidWidget } from "@0xsquid/widget";
 
-const INTEGRATOR_ID = "foundation-47d2248b-9640-4d73-bd35-14c1c8fcfa27";
+const INTEGRATOR_ID = "foundation-866ad524-cc48-4358-af54-384421e6f890";
 
 function App() {
   return (
@@ -12,6 +12,10 @@ function App() {
           slippage: 1.5,
           mainLogoUrl: "",
           hideAnimations: true,
+          priceImpactWarnings: {
+            warning: 3,
+            critical: 5,
+          },
           theme: {
             borderRadius: {
               "button-lg-primary": "0.3125rem",
@@ -28,9 +32,9 @@ function App() {
             },
             fontSize: {
               caption: "0.875rem",
-              "body-small": "1.14375rem",
-              "body-medium": "1.40625rem",
-              "body-large": "1.75625rem",
+              "body-small": "1rem",
+              "body-medium": "1rem",
+              "body-large": "1rem",
               "heading-small": "1.5rem",
               "heading-medium": "3.08125rem",
               "heading-large": "4.40625rem",
@@ -95,6 +99,7 @@ function App() {
           },
         }}
       />
+      <div></div>
     </>
   );
 }

@@ -1,6 +1,5 @@
 :root {
   background-color: #171920;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -17,9 +16,10 @@ body {
 }
 
 .tw-font-squid-main {
-  font-family: "Anta", serif !important;
+  font-family: "Roboto Flex", serif !important;
   font-weight: 400;
   font-style: normal;
+  font-size: 16px !important;
 }
 
 .squid-router-transition-layer-active > nav {
@@ -36,4 +36,16 @@ body {
 
 .tw-h-button {
   height: 2.875rem;
+}
+
+h6 {
+  font-family: "Anta", serif !important;
+}
+
+h6:after {
+  content: '/Bridge';
+}
+
+.tw-leading-body-small {
+  line-height: 16px !important;
 }

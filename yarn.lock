@@ -54,15 +54,6 @@
     lodash "^4.17.21"
     long "^5.2.3"
 
-"@0xsquid/squid-types@0.1.100":
-  version "0.1.100"
-  resolved "https://registry.npmjs.org/@0xsquid/squid-types/-/squid-types-0.1.100.tgz"
-  integrity sha512-FeA2zUdmUsGOKZ5v+qgH4V4AeObS3a5yN/3Q1F3LF6KyGo6iq88UMQ1nqIIwyU0r+6j/d1XYkevXHfMuzL7aTw==
-  dependencies:
-    "@axelar-network/axelarjs-sdk" "^0.16.1"
-    "@ethersproject/providers" "^5.7.2"
-    typescript "*"
-
 "@0xsquid/squid-types@0.1.124":
   version "0.1.124"
   resolved "https://registry.npmjs.org/@0xsquid/squid-types/-/squid-types-0.1.124.tgz"
