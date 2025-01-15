@@ -20,6 +20,8 @@ body {
 
 .tw-h-squid-xxl {
   height: 52px;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .tw-font-squid-main {
@@ -29,20 +31,12 @@ body {
   font-size: 16px !important;
 }
 
-.squid-router-transition-layer-active > nav {
-  flex-direction: row-reverse !important;
-}
-
 .squid-router-transition-layer-active > section {
   display: grid;
 }
 
-.squid-router-transition-layer-active > nav > div:first-child {
-  flex-direction: row-reverse !important;
-}
-
 .tw-h-button {
-  height: 2.875rem;
+  height: 3rem;
 }
 
 h6 {
@@ -50,10 +44,6 @@ h6 {
   font-weight: 500;
   line-height: 36px;
 }
-
-/* h6:after {
-  content: '/Bridge';
-} */
 
 .tw-leading-body-small {
   line-height: 16px !important;
@@ -63,6 +53,34 @@ h6 {
   line-height: 16px !important;
 }
 
-input {
-  height: 36px !important;
+.tw-pr-squid-m {
+  padding-right: 15px !important;
+}
+
+.tw-pl-squid-m {
+  padding-left: 15px !important;
+}
+
+.tw-px-squid-m {
+  @media screen and (max-width: 768px) {
+    padding-left: 15px !important;
+    padding-right: 15px !important;  
+  }
+}
+
+.tw-px-squid-s {
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}
+
+.tw-p-squid-xxs {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+
+.tw-bg-button-lg-secondary-bg:hover {
+  background-color: #C49373;
+  border: #C49373;
+  transition: ease-in-out;
+  transition-duration: 100ms;
 }

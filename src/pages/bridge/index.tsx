@@ -1,5 +1,4 @@
 import { SquidWidget } from "@0xsquid/widget";
-import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import icSquid from "../../assets/icons/squid.svg";
 import { Footer } from "../../components/Footer";
@@ -7,35 +6,29 @@ import { Footer } from "../../components/Footer";
 const INTEGRATOR_ID = "foundation-866ad524-cc48-4358-af54-384421e6f890";
 
 export const Bridge: React.FC = () => {
-  useEffect(() => {
-    const comp = document.getElementsByClassName(
-      "tw-text-heading-small tw-tracking-heading-small tw-leading-heading-small tw-font-heading-small !tw-font-regular"
-    )[0].innerHTML;
-    if (comp === "Swap") {
-      document.getElementsByClassName(
-        "tw-text-heading-small tw-tracking-heading-small tw-leading-heading-small tw-font-heading-small !tw-font-regular"
-      )[0].innerHTML = "Swap/Bridge";
-    }
-  });
-
   return (
     <div className="relative min-h-[calc(100vh-56px)] z-0 flex flex-col overflow-hidden">
-      <div className="max-w-100% xl:max-w-1200px pt-30px mx-auto w-100% flex justify-center items-center">
+      <div className="max-w-100% xl:max-w-1200px md:pt-30px mx-auto w-100% flex justify-center items-center">
         <div className="w-100% sm:w-480px">
-          {/* <div className="text-24px font-700 leading-none uppercase py-12px font-['Anta'] c-white leading-36px">
-            Swap/Bridge
-          </div> */}
           <SquidWidget
+            advancedUi={{
+              labels: {
+                titles: {
+                  swap: "Swap/Bridge",
+                },
+              },
+            }}
             config={{
               integratorId: INTEGRATOR_ID,
               apiUrl: "https://apiplus.squidrouter.com",
               slippage: 1.5,
               mainLogoUrl: "",
-              hideAnimations: true,
               priceImpactWarnings: {
                 warning: 3,
                 critical: 5,
               },
+
+              loadPreviousStateFromLocalStorage: true,
               theme: {
                 borderRadius: {
                   "button-lg-primary": "0.3125rem",
@@ -91,7 +84,7 @@ export const Bridge: React.FC = () => {
                   "royal-700": "#6B45A1",
                   "status-positive": "#0ecb81",
                   "status-negative": "#e43e53",
-                  "status-partial": "#c49373",
+                  "status-partial": "#c49573",
                   "highlight-700": "#E4FE53",
                   "animation-bg": "#18191c",
                   "animation-text": "#c49573",
@@ -119,13 +112,13 @@ export const Bridge: React.FC = () => {
               },
             }}
           />
-          <div className="flex items-center justify-end mt-12px">
+          <div className="flex items-center justify-end mt-12px px-20px md:px-0">
             <NavLink
               to={`https://www.squidrouter.com/`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={icSquid} className="h-19px" />
+              <img src={icSquid} className="h-24px" />
             </NavLink>
           </div>
         </div>

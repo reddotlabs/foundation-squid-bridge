@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import icLogo from "../assets/icons/logo.svg";
 import c from "classnames";
+import { ExternalLinks } from "./Footer";
 
 export type MenuItem = {
   to?: string;
@@ -14,59 +15,29 @@ export type MenuItem = {
   isActive?: (path: string) => boolean;
 };
 
-const items: MenuItem[] = [
-  {
-    title: "Bridge",
-    to: "/",
-  },
-];
-
 export const Header: React.FC = () => {
   return (
     <header>
-      <div className="px-15px h-56px flex justify-between bg-#22232B items-center gap-x-10px md:b-0 md:b-b-1px md:b-solid md:b-b-#323543 md:bg-transparent pt-4px">
+      <div className="px-15px h-56px flex justify-between bg-#22232B items-center gap-x-10px md:bg-transparent pt-4px">
         <div className="flex items-center flex-1 overflow-hidden -mt-6px">
           <a href="/">
-            <img src={icLogo} className="h-20px md:h-24px block" />
+            <img src={icLogo} className="h-28px md:h-32px block" />
           </a>
-          <div className="flex-1 overflow-x-auto invisible-scroll">
-            <div className={c("flex items-center relative z-2")}>
-              <ul className="flex items-center list-none gap-x-20px ml-20px xl:gap-x-30px m-0 xl-ml-30px pl-0">
-                {items.map((item, index) => (
-                  <li
-                    key={index}
-                    className={c(
-                      "text-15px font-500 c-muted no-underline",
-                      "flex items-center",
-                      "hover:op-80 transition-all"
-                    )}
-                  >
-                    {item.onClick ? (
-                      <div className="cursor-pointer" onClick={item.onClick}>
-                        {item.title}
-                      </div>
-                    ) : (
-                      <NavLink
-                        to={item.to || ""}
-                        target={item.isExternal ? "_blank" : undefined}
-                        rel={
-                          item.isExternal ? "noopener noreferrer" : undefined
-                        }
-                        className={(p) =>
-                          c("c-#8F8F8F", {
-                            "c-#fff": p.isActive,
-                          })
-                        }
-                      >
-                        {item.title}
-                      </NavLink>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
         </div>
+        <NavLink
+          to={ExternalLinks.trade}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={c(
+            "flex items-center justify-center rd-5px h-36px font-700 text-16px hover:not-disabled:cursor-pointer transition-all duration-200 ease-linear disabled:pointer-events-none px-24px",
+            "bg-#C49373 text-#fff hover:not-disabled:bg-op-75 disabled:cursor-initial disabled:text-#8F8F8F disabled:bg-#47494C",
+            "text-16px leading-21px font-700"
+          )}
+        >
+          <div className="text-14px font-500 leading-14px !c-#fff">
+            Trade now
+          </div>
+        </NavLink>
       </div>
     </header>
   );
