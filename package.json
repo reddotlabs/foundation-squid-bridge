@@ -12,6 +12,8 @@
   "dependencies": {
     "@0xsquid/squid-types": "0.1.124",
     "@0xsquid/widget": "^3.0.5",
+    "@unocss/reset": "^0.59.4",
+    "classnames": "^2.5.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -19,6 +21,7 @@
     "@eslint/js": "^9.9.0",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
+    "@unocss/transformer-variant-group": "^0.59.4",
     "@vitejs/plugin-react": "^4.3.1",
     "eslint": "^9.9.0",
     "eslint-plugin-react-hooks": "^5.1.0-rc.0",
@@ -26,6 +29,7 @@
     "globals": "^15.9.0",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.0.1",
+    "unocss": "^0.59.4",
     "vite": "^5.4.1",
     "vite-plugin-node-polyfills": "^0.22.0"
   }
