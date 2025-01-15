@@ -46,8 +46,14 @@ body {
 }
 
 h6 {
-  display: none;
+  font-family: "Anta", serif !important;
+  font-weight: 500;
+  line-height: 36px;
 }
+
+/* h6:after {
+  content: '/Bridge';
+} */
 
 .tw-leading-body-small {
   line-height: 16px !important;
@@ -55,4 +61,8 @@ h6 {
 
 .tw-leading-caption {
   line-height: 16px !important;
+}
+
+input {
+  height: 36px !important;
 }

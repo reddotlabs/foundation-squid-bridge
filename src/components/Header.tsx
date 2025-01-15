@@ -52,6 +52,11 @@ export const Header: React.FC = () => {
                         rel={
                           item.isExternal ? "noopener noreferrer" : undefined
                         }
+                        className={(p) =>
+                          c("c-#8F8F8F", {
+                            "c-#fff": p.isActive,
+                          })
+                        }
                       >
                         {item.title}
                       </NavLink>
