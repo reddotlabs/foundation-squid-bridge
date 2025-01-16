@@ -9,7 +9,7 @@ export const Bridge: React.FC = () => {
   return (
     <div className="relative min-h-[calc(100vh-56px)] z-0 flex flex-col">
       <div className="max-w-100% xl:max-w-1200px md:pt-30px mx-auto w-100% flex justify-center items-center">
-        <div className="w-480px px-16px">
+        <div className="w-496px px-16px">
           <SquidWidget
             advancedUi={{
               labels: {
@@ -27,7 +27,6 @@ export const Bridge: React.FC = () => {
                 warning: 3,
                 critical: 5,
               },
-
               loadPreviousStateFromLocalStorage: true,
               theme: {
                 borderRadius: {
@@ -112,7 +111,7 @@ export const Bridge: React.FC = () => {
               },
             }}
           />
-          <div className="flex items-center justify-end mt-12px px-20px md:px-0">
+          <div className="flex items-center justify-end mt-12px px-20px md:px-0 w-100%">
             <NavLink
               to={`https://www.squidrouter.com/`}
               target="_blank"

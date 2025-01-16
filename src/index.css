@@ -92,3 +92,26 @@ h6 {
 .tw-max-w-\[80px\] {
   min-width: 60px !important;
 }
+
+.mobile-xs-height\:tw-pb-squid-s {
+  padding-bottom: 8px !important;
+}
+
+.mobile-sm-height\:tw-h-\[75px\] {
+  height: 60px !important;
+}
+
+/* .mobile-xs-height\:tw-flex-col {
+  flex-direction: row-reverse !important;
+} */
+
+.tw-group {
+  @media screen and (max-width: 768px) {
+    max-height: calc(100vh - 277px) !important;
+  }
+}
+
+.mobile-xs-height\:tw-min-h-card-large {
+  min-height: 600px !important;
+}
+
