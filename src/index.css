@@ -8,7 +8,7 @@
 
 body {
   margin: 0;
-  min-width: 100vw;
+  width: 100%;
   min-height: 100vh;
   color: #fff;
 }
@@ -83,4 +83,12 @@ h6 {
   border: #C49373;
   transition: ease-in-out;
   transition-duration: 100ms;
+}
+
+.mobile-xs\:tw-w-modal-compact {
+  width: 100% !important;
+}
+
+.tw-max-w-\[80px\] {
+  min-width: 60px !important;
 }

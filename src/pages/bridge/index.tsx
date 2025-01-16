@@ -7,9 +7,9 @@ const INTEGRATOR_ID = "foundation-866ad524-cc48-4358-af54-384421e6f890";
 
 export const Bridge: React.FC = () => {
   return (
-    <div className="relative min-h-[calc(100vh-56px)] z-0 flex flex-col overflow-hidden">
+    <div className="relative min-h-[calc(100vh-56px)] z-0 flex flex-col">
       <div className="max-w-100% xl:max-w-1200px md:pt-30px mx-auto w-100% flex justify-center items-center">
-        <div className="w-100% sm:w-480px">
+        <div className="w-480px px-16px">
           <SquidWidget
             advancedUi={{
               labels: {
