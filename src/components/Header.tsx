@@ -1,7 +1,7 @@
-import { NavLink } from "react-router-dom";
-import icLogo from "../assets/icons/logo.svg";
 import c from "classnames";
+import { NavLink } from "react-router-dom";
 import { ExternalLinks } from "./Footer";
+import { Logo } from "./Logo";
 
 export type MenuItem = {
   to?: string;
@@ -18,23 +18,28 @@ export type MenuItem = {
 export const Header: React.FC = () => {
   return (
     <header>
-      <div className="px-15px h-56px flex justify-between bg-#22232B items-center gap-x-10px md:bg-transparent pt-4px">
+      <div
+        className={c(
+          "relative h-64px bg-#633821 bg-op-40 flex items-center",
+          "lg:px-32px lg:bg-op-10 px-15px z-2 [&_a.active]:(c-#633821)"
+        )}
+      >
         <div className="flex items-center flex-1 overflow-hidden">
-          <a href="/">
-            <img src={icLogo} className="h-28px md:h-32px block" />
-          </a>
+          <NavLink to="/">
+            <Logo loop />
+          </NavLink>
         </div>
         <NavLink
           to={ExternalLinks.trade}
           target="_blank"
           rel="noopener noreferrer"
           className={c(
-            "flex items-center justify-center rd-5px h-32px font-700 text-16px hover:not-disabled:cursor-pointer transition-all duration-200 ease-linear disabled:pointer-events-none px-24px",
-            "bg-#C49373 text-#fff hover:not-disabled:bg-op-75 disabled:cursor-initial disabled:text-#8F8F8F disabled:bg-#47494C",
-            "text-16px leading-21px font-700"
+            "flex items-center justify-center rd-5px h-40px hover:not-disabled:cursor-pointer transition-all duration-200 ease-linear disabled:pointer-events-none py-11px px-20px rd-10px",
+            "bg-#B38160 text-#fff hover:not-disabled:bg-op-75 disabled:cursor-initial disabled:text-#8F8F8F disabled:bg-#47494C",
+            "text-14px leading-18px font-600"
           )}
         >
-          <div className="text-14px font-500 leading-14px !c-#fff">Trade</div>
+          <span>Trade</span>
         </NavLink>
       </div>
     </header>

@@ -26,6 +26,7 @@ body {
   min-height: 100% !important;
   height: 100%;
   color: #fff;
+  background-color: #E8DBC5;
 }
 
 .input {
@@ -40,7 +41,7 @@ body {
 }
 
 .tw-font-squid-main {
-  font-family: "Roboto Flex", serif !important;
+  font-family: "Lexend", serif !important;
   font-weight: 400;
   font-style: normal;
   font-size: 16px !important;
@@ -56,8 +57,10 @@ body {
 
 h6 {
   font-family: "Anta", serif !important;
+  font-size: 30px !important;
   font-weight: 500;
   line-height: 36px;
+  color: #000;
 }
 
 .tw-leading-body-small {
@@ -130,3 +133,27 @@ h6 {
   min-height: 600px !important;
 }
 
+.tw-border-material-light-thin {
+  border-color: #CCC8C2 !important;
+}
+
+.tw-border-t-material-light-thin {
+  border-color: #C0C0C0 !important;
+}
+
+.tw-outline-material-light-thin {
+  outline-color: #C0C0C0 !important;
+}
+
+button > svg {
+  color: #B38160;
+}
+
+button {
+  align-items: center !important;
+  font-weight: 700 !important;
+}
+
+button > .tw-border-material-light-thin {
+  border-color: #B38160 !important;
+}
