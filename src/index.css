@@ -1,3 +1,9 @@
+html, #root, body {
+  height: 100%;
+  background-color: #E8DBC5;
+  color: #fff;
+}
+
 :root {
   background-color: #171920;
   font-synthesis: none;
@@ -21,12 +27,19 @@
   background: #4d4c4c;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #fff;
+  background: #4d4c4c;
+}
+
+::selection {
+  color: #fff;
+  background: #4d4c4c;
+}
+
 body {
   margin: 0;
-  min-height: 100% !important;
-  height: 100%;
-  color: #fff;
-  background-color: #E8DBC5;
+  min-height: 100%;
 }
 
 .input {
@@ -34,11 +47,11 @@ body {
   padding-bottom: 0px !important;
 }
 
-.tw-h-squid-xxl {
+/* .tw-h-squid-xxl {
   height: 52px;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
-}
+} */
 
 .tw-font-squid-main {
   font-family: "Lexend", serif !important;
@@ -101,6 +114,7 @@ h6 {
   border: #C49373;
   transition: ease-in-out;
   transition-duration: 100ms;
+  color: #fff;
 }
 
 .mobile-xs\:tw-w-modal-compact {
@@ -119,9 +133,19 @@ h6 {
   height: 60px !important;
 }
 
-/* .mobile-xs-height\:tw-flex-col {
+.squid-router-transition-layer-active > nav:first-child {
   flex-direction: row-reverse !important;
-} */
+}
+
+.squid-router-transition-layer-active > nav:first-child > div:first-child {
+  flex-direction: row-reverse !important;
+}
+
+.squid-router-transition-layer-active > div > nav > div > div:last-child {
+  justify-content: end;
+  padding-right: 0;
+  margin-right: 0;
+}
 
 .tw-group {
   @media screen and (max-width: 768px) {
@@ -130,7 +154,10 @@ h6 {
 }
 
 .mobile-xs-height\:tw-min-h-card-large {
-  min-height: 600px !important;
+  /* min-height: 600px !important; */
+  @media screen and (max-width: 768px) {
+    min-height: 600px !important;
+  }
 }
 
 .tw-border-material-light-thin {
@@ -156,4 +183,105 @@ button {
 
 button > .tw-border-material-light-thin {
   border-color: #B38160 !important;
+}
+
+.tw-aspect-square > div {
+  border: transparent !important;
+}
+
+button > div:last-child {
+  border: transparent !important;
+}
+
+.tw-bg-menu-backdrop {
+  border: none !important;
+}
+
+.tw-bg-button-md-tertiary-bg:hover {
+    background: #B38160;
+    color: #fff;
+    transition: ease-in-out;
+    transition-duration: 100ms;
+}
+
+.tw-w-\[44px\] {
+  color: #161616;
+}
+
+.tw-gap-1 > svg {
+  color: #292D32;
+}
+
+.tw-rounded-menu-lg {
+  background-color: #FBFBFD !important;
+}
+
+div.modal > div:first-child > div > div:last-child > button {
+  border-color: transparent !important;
+}
+
+.tw-rounded-button-md-secondary:hover {
+  background-color: #B38160;
+  color: #fff;
+  border-color: #B38160 !important;
+  transition: ease-in-out;
+  transition-duration: 100ms;
+}
+
+.mobile-lg\:tw-w-\[190px\] > svg.tw-text-grey-600 {
+  fill: #292D32; 
+}
+
+input::placeholder {
+  color: #8f8f8f !important;
+}
+
+div.tw-text-grey-900:hover {
+  background-color: #B38160;
+  color: #fff;
+  border-color: #B38160 !important;
+  transition: ease-in-out;
+  transition-duration: 100ms;
+}
+
+li.tw-h-list-item-large > button:hover {
+  background-color: #b3816033 !important;
+  transition: ease-in-out;
+  transition-duration: 100ms;
+}
+
+.mobile-lg\:tw-max-w-modal-large {
+  max-width: none ;
+}
+
+/* .hover\:tw-bg-material-light-thin:hover {
+  background-color: #b3816033 !important;
+  transition: ease-in-out;
+  transition-duration: 100ms;
+} */
+
+aside.mobile-lg\:tw-w-card-large > div.tw-w-\[157px\] > div > div:first-child > button:hover, aside.mobile-lg\:tw-w-card-large > div.tw-w-squid-xxl > div > div:first-child > button:hover, div.tw-max-w-modal-compact > div.hover\:tw-bg-material-light-thin:hover, a.hover\:tw-bg-material-light-thin:hover, header > div:first-child > div.tw-rounded-squid-s > button:hover, li > button.hover\:tw-bg-material-light-thin:hover, footer > div > div.tw-rounded-squid-s > button:hover, div.modal > div:first-child > div:first-child > div.mobile-lg\:tw-min-w-modal-large > div:first-child > div:first-child > div.hover\:tw-border-material-light-average:hover {
+  background-color: #b3816033 !important;
+  transition: ease-in-out;
+  transition-duration: 100ms
+}
+
+a.hover\:tw-bg-material-light-thin > div:last-child > svg {
+  color: #161616 !important;
+}
+
+div.tw-border-material-light-thin > button.hover\:tw-bg-material-light-thin:hover {
+  background-color: #B38160;
+  color: #fff;
+  border-color: #B38160 !important;
+  transition: ease-in-out;
+  transition-duration: 100ms;
+}
+
+.tw-bg-material-light-thin {
+  background-color: #b3816033 !important;
+}
+
+.mobile-lg\:tw-min-w-modal-large {
+  min-width: 460px;
 }

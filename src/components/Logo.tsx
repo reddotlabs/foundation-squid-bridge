@@ -46,18 +46,18 @@ export const Logo: React.FC<LogoProps> = ({ loop }) => {
     },
   });
   return (
-    <div className="flex items-center h-24px gap-x-9px md:(h-30px gap-x-12px)">
+    <div className="flex items-center h-24px gap-x-9px md:h-34px md:gap-x-12px">
       <animated.div style={logoAnimation}>
         <img
           src={logoSingle}
-          className="h-24px w-24px md:(h-30px w-30px) block [&_path]:fill-#633821 -my-4px"
+          className="h-24px w-24px md:h-34px md:w-34px block [&_path]:fill-#633821 -my-4px"
         />
       </animated.div>
       <animated.img
         style={nameAnimation}
         src={name}
         alt="foundation"
-        className="h-17px md:(h-22px) block"
+        className="h-17px md:h-33.8px block"
       />
     </div>
   );

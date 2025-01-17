@@ -17,11 +17,11 @@ export const ExternalLinks = {
 
 export const Footer: React.FC = () => {
   return (
-    <div className="font-['Lexend'] mt-auto">
+    <div className="font-['Lexend']">
       <div className="w-100% overflow-hidden flex justify-center">
         <img
           src={bgFooter}
-          className="h-171px w-auto max-w-none md:w-100% md:h-auto block"
+          className="h-171px w-auto max-w-none md:w-100% md:h-auto block z-1"
         />
       </div>
     </div>
